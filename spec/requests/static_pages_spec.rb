@@ -1,6 +1,5 @@
 require 'rails_helper'
 require 'spec_helper'
-$text = "Ruby on Rail Tutorial Sample App"
 
 describe "Static pages" do
 	let(:text) { "Ruby on Rails Tutorial Sample App" }
@@ -50,7 +49,7 @@ describe "Static pages" do
   	end
   	it "should have the content 'Contact'" do
   		visit '/static_pages/contact'
-  		expect(page).to have_title("#{text}| Contact")
+  		expect(page).to have_title("#{text} | Contact")
   	end
   end
 end

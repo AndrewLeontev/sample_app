@@ -12,7 +12,13 @@ gem 'rails', '~> 5.1.1'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  #gem 'spork'
+  gem 'spork-rails', git: 'http://github.com/railstutorial/spork-rails.git'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
